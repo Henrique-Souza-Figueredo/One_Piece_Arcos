@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./img/favicon.ico" />
-    <title>Arcos Do Segundo melhor anime</title>
+    <title>Arcos do Melhor Anime</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -14,68 +20,53 @@
       </video>
     </div>
 
-    <div class="container">
-      <div class="sidebar">
-        <div class="logo">
-          <a href="index.html"
-            ><img src="./Imagens/one-piece-logo.png" alt="Logo"
-          /></a>
-        </div>
-        <nav class="menu">
-          <ul>
-            <li>
-              <button onclick="AlterVisibility('1')">
-                <a href="#secao1">Arco de East Blue</a>
-              </button>
-            </li>
-            <li>
-              <button onclick="AlterVisibility('2')">
-                <a href="#secao2">Arco de Alabasta</a>
-              </button>
-            </li>
-            <li>
-              <button onclick="AlterVisibility('3')">
-                <a href="#secao3">Arco de Skypiea</a>
-              </button>
-            </li>
-            <li>
-              <button onclick="AlterVisibility('4')">
-                <a href="#secao4">Arco de Water 7</a>
-              </button>
-            </li>
-            <li>
-              <button onclick="AlterVisibility('5')">
-                <a href="#secao5">Arco de Thriller Bark</a>
-              </button>
-            </li>
-            <li>
-              <button onclick="AlterVisibility('6')">
-                <a href="#secao6">Arco da Ilha dos Homens-Peixe</a>
-              </button>
-            </li>
-            <li>
-              <button onclick="AlterVisibility('7')">
-                <a href="#secao7">Arco de Punk Hazard</a>
-              </button>
-            </li>
-            <li>
-              <button onclick="AlterVisibility('8')">
-                <a href="#secao8">Arco de Dressrosa</a>
-              </button>
-            </li>
-            <li>
-              <button onclick="AlterVisibility('9')">
-                <a href="#secao9">Arco da Ilha Whole Cake</a>
-              </button>
-            </li>
-            <li>
-              <button onclick="AlterVisibility('10')">
-                <a href="#secao10">Arco do País de Wano</a>
-              </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./Imagens/one-piece-logo.png" alt="Logo" width="40" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Arcos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#secao1">East Blue</a></li>
+                <li><a class="dropdown-item" href="#secao2">Alabasta</a></li>
+                <li><a class="dropdown-item" href="#secao3">Skypiea</a></li>
+                <li><a class="dropdown-item" href="#secao4">Water 7</a></li>
+                <li><a class="dropdown-item" href="#secao5">Thriller Bark</a></li>
+                <li><a class="dropdown-item" href="#secao6">Ilha dos Homens-Peixe</a></li>
+                <li><a class="dropdown-item" href="#secao7">Punk Hazard</a></li>
+                <li><a class="dropdown-item" href="#secao8">Dressrosa</a></li>
+                <li><a class="dropdown-item" href="#secao9">Whole Cake</a></li>
+                <li><a class="dropdown-item" href="#secao10">País de Wano</a></li>
+              </ul>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
+    </nav>
+
 
       <div class="content">
         <div class="box" id="secao1">
@@ -800,7 +791,22 @@
         </div>
       </div>
     </div>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
